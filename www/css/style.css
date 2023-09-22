@@ -1,0 +1,201 @@
+
+.container-1 { 
+    display: flex;
+    justify-content: space-between;
+    padding-left: 1%;
+}
+
+.header-title {
+    color: #353535;
+    padding-top: 10%;
+    padding-left: 10%;
+    margin: 0;
+    font-size: 500%;
+    line-height: 97%;
+    font-family: Corbel;
+    letter-spacing: -0.05em; /* уменьшить интервал между буквами на 0.5em (половина текущего размера шрифта) */
+}
+
+.header-text {
+    padding-top: 3%;
+    font-size: 110%;
+    color: #7c7c7c;
+    font-family: Arial;
+    letter-spacing: 0.01em;
+}
+
+.header-title, 
+.header-text { 
+    white-space: pre-line; /* перенос строки */
+    padding-left: 10%;
+}
+
+.box-1 {
+    width: 1000px; 
+    height: 700px; 
+    background: linear-gradient(100deg, #fcfeff, #f1fbfd, #cbdffb); /* Градиентный фон с измененными цветами */
+    border-radius: 30px; /* Радиус закругления углов */
+}
+
+.box-1 img {
+    padding-top: 5%;
+    padding-left: 10%;
+}
+
+.container-2 { 
+    display: flex;
+    justify-content: space-between;
+    padding-right: 1%;
+}
+
+.box-3 img {
+    width: 820px;
+    height: 700px;
+    padding-top: 10%;
+    padding-left: 10%;
+}
+
+.box-4 {
+    width: 1000px;
+}
+
+.box-4 img {
+    width: 18%;
+    padding-left: 60%;
+}
+
+
+.body-title {
+    color: #353535;
+    padding-right: 10%;
+    margin: 0;
+    font-family: Corbel;
+    font-size: 380%;
+    letter-spacing: -0.05em; /* уменьшить интервал между буквами на 0.5em (половина текущего размера шрифта) */
+}
+
+.body-text {
+    padding-top: 2%;
+    font-family: Arial;
+    font-size: 110%;
+    color: #5f8a97;
+    letter-spacing: 0.05em;
+    line-height: 140%;
+}
+
+.body-title, 
+.body-text {
+    white-space: pre-line; /* перенос строки */
+    padding-right: 10%;
+    padding-left: 25%;
+}
+
+.container-3 { 
+    display: flex;
+    justify-content: center;
+    padding-top: 4%;
+}
+
+.box-5 { 
+    width: 98%;
+    background: linear-gradient(100deg, #feffff, #f1fbfd, #e6f0ff); /* Градиентный фон с измененными цветами */
+    border-radius: 30px; /* Радиус закругления углов */
+}
+
+.container-3-1 { 
+    display: flex;
+    justify-content: space-between;
+}
+
+.b-title {
+    color: #353535;
+    padding-right: 10%;
+    margin: 0;
+    font-family: Arial;
+    font-size: 180%;
+    letter-spacing: -0.05em; /* уменьшить интервал между буквами на 0.5em (половина текущего размера шрифта) */
+}
+
+.b-text {
+    padding-top: 2%;
+    font-family: Arial;
+    font-size: 105%;
+    color: #5f8a97;
+    letter-spacing: 0.05em;
+    line-height: 140%;
+}
+
+.b-title, 
+.b-text {
+    white-space: pre-line; /* перенос строки */
+}
+
+.box-5-1 .b-title, 
+.box-5-1 .b-text,
+.box-5-1 img {
+    padding-left: 24%;
+}
+
+.box-5-1 img {
+    padding-top: 10%;
+    padding-bottom: 5%;
+}
+
+
+.box-5-1 .b-text {
+    padding-bottom: 15%;  
+}
+
+.box-5-1 {
+    width: 30%;
+}
+
+.box-5-2 .b-title, 
+.box-5-2 .b-text,
+.box-5-2 img {
+    padding-left: 15%;
+    
+}
+
+.box-5-2 img {
+    padding-top: 10%;
+    padding-bottom: 5%;
+}
+
+.box-5-2 .b-text {
+    padding-bottom: 15%;  
+}
+
+.box-5-2 {
+    width: 30%;
+}
+
+.box-5-3 .b-title, 
+.box-5-3 .b-text,
+.box-5-3 img {
+    padding-left: 1%;
+}
+
+.box-5-3 img {
+    padding-top: 10%;
+    padding-bottom: 5%;
+}
+
+.box-5-3 .b-text {
+    padding-bottom: 15%;  
+}
+
+.box-5-3 {
+    width: 30%;
+}
+
+.third-section {
+    padding-bottom: 10%;
+}
+
+
+
+
+
+
+

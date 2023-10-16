@@ -1,0 +1,1972 @@
+.container-1 { 
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2%;
+    margin-left: 1%;
+    position: relative;
+}
+
+.container-1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(100deg, #fcfeff, #f1fbfd, #cbdffb);
+    border-radius: 30px; /* Радиус закругления углов для фона */
+    z-index: -1;
+    width: 65%; /* Ширина фонового слоя */
+}
+
+.header-title {
+    color: #353535;
+    padding-top: 10%;
+    padding-left: 10%;
+    margin: 0;
+    font-size: 500%;
+    line-height: 97%;
+    font-family: Corbel;
+    letter-spacing: -0.05em; /* уменьшить интервал между буквами на 0.5em (половина текущего размера шрифта) */
+}
+
+.header-text {
+    padding-top: 3%;
+    font-size: 110%;
+    color: #7c7c7c;
+    font-family: Arial;
+    letter-spacing: 0.01em;
+    line-height: 150%;
+}
+
+.header-title, 
+.header-text { 
+    white-space: pre-line; /* перенос строки */
+    padding-left: 10%;
+}
+
+.box-1 {
+    width: 50%; 
+    height: 700px; 
+
+    img {
+        padding-left: 10%;
+        padding-top: 7%;
+        max-width: 7%; 
+        height: auto;
+        vertical-align: text-bottom;
+        margin-right: 3%;
+    }
+}
+
+.box-2 {
+    width: 35%; 
+    height: 500px;
+    margin-right: 14%;
+    margin-top: 5%;
+    background: white; /* Градиентный фон с измененными цветами */
+    border-radius: 15px; /* Радиус закругления углов */
+    box-shadow: 2px 5px 60px rgba(224, 224, 224, 0.5);
+}
+
+.calc-title {
+    color: #353535;
+    padding-top: 6%;
+    padding-left: 5%;
+    margin: 0;
+    font-size: 160%;
+    line-height: 97%;
+    font-family: Arial;
+    letter-spacing: -0.05em; /* уменьшить интервал между буквами на 0.5em (половина текущего размера шрифта) */
+}
+
+form {
+    padding-top: 5%;
+    padding-left: 5%; 
+}
+
+input[type="radio"] {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+    -webkit-appearance: none; /* Отключаем стандартный внешний вид */
+    -moz-appearance: none;
+    appearance: none;
+    border: 1px solid #d1d1d1; /* Устанавливаем границу */
+    border-radius: 50%; /* Делаем форму круглой */
+    outline: none; /* Убираем контур при фокусе */
+    cursor: pointer; /* Устанавливаем указатель при наведении */
+}
+
+input[type="radio"]:checked {
+    background-color: #2057ff; /* Изменяем фон для активированных радиокнопок */
+    border: 7px solid #dbe7ff; /* Устанавливаем границу */
+}
+
+.radio {
+    display: flex;
+    justify-content: space-between; /* Размещаем элементы по краям */
+    align-items: center;
+    color: #333; /* Цвет текста */
+    font-family: Arial; /* Шрифт текста */
+    padding-bottom: 8%;
+    padding-right: 42%;
+    font-size: 110%;
+    text-align: center;
+}
+
+label[for="metric"], label[for="imperial"] {
+    position: relative;
+    bottom: 7px;
+    left: 5px;
+}
+
+.num {
+    display: flex;
+    justify-content: space-between; /* Размещаем элементы по краям */
+    align-items: center;
+    padding-bottom: 5%;
+    padding-right: 42%;
+    font-size: 95%;
+    color: #7c7c7c;
+    font-family: Arial;
+    letter-spacing: 0.01em;
+}
+
+input[type="number"] {
+    position: relative;
+    width: 150px;
+    height: 65px;
+    margin-right: 20px;
+    padding-left: 10%;
+    -webkit-appearance: none; /* Отключаем стандартный внешний вид */
+    -moz-appearance: none;
+    appearance: none;
+    border: none; /* Убираем границы */
+    background: transparent; /* Устанавливаем прозрачный фон */
+    outline: none; /* Убираем обводку при фокусировке */
+}
+
+/* Скрыть стрелочки для полей ввода типа "number" */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none; /* Скрыть внутренние и внешние стрелочки в Webkit браузерах (Chrome, Safari) */
+    appearance: none; /* Скрыть стрелочки в других браузерах */
+    margin: 0; /* Убрать отступы, чтобы сохранить компактный вид */
+}
+
+.custom-input {
+    width: 100%;
+    font-size: 30px;
+    color: #333333;
+    font-weight: bolder;
+    font-family: Yu Gothic UI;
+    letter-spacing: -0.02em;
+}
+
+.custom-input::placeholder {
+    color: #c3c3c3; 
+}
+
+.num-group111 {
+    display: flex;
+    position: relative;
+    width: 250px;
+    height: 70px;
+    margin-top: 5%;
+    margin-right: 20px;
+    border: 1px solid #e6e6e6; /* Устанавливаем границу */
+    border-radius: 15px; /* Делаем форму круглой */
+    outline: none; /* Убираем контур при фокусе */
+
+    p {
+        position: absolute;
+        left: 80%;
+        font-size: x-large;
+        font-weight: bold;
+        color: #2050ff;
+    }
+}
+
+.result {
+    width: 92%;
+    height: 130px;
+    background: linear-gradient(100deg, #0561fe, #5490ff);
+    border-top-left-radius: 10px; /* Радиус скругления для верхнего левого угла */
+    border-bottom-left-radius: 10px; /* Радиус скругления для нижнего левого угла */
+    border-top-right-radius: 65px; /* Радиус скругления для верхнего правого угла */
+    border-bottom-right-radius: 65px; /* Радиус скругления для нижнего правого угла */
+}
+
+.result-title {
+    color: white;
+    font-family: Calibri Light;
+    font-size: 160%;
+    padding-top: 5%;
+}
+
+.result-text {
+    margin-top: -2%;
+    color: rgb(218, 217, 217);
+    font-family: Calibri;
+    font-size: 100%;
+}
+
+.result-title, .result-text {
+    padding-left: 6%;
+}
+
+.container-2 { 
+    display: flex;
+    justify-content: space-between;
+    padding-right: 1%;
+}
+
+.box-3 {
+    
+    img {
+        width: 115%;
+        height: auto;
+        padding-top: 12%;
+        padding-left: 12%;
+    }
+}
+
+.box-4 {
+    width: 50%;
+
+    img {
+        padding-left: 68%;
+        padding-bottom: 4%;
+        padding-top: 4%;
+        max-width: 10%; 
+        height: auto;
+    }
+}
+
+.body-title {
+    color: #353535;
+    padding-right: 10%;
+    margin: 0;
+    font-family: Corbel;
+    font-size: 380%;
+    letter-spacing: -0.05em; /* уменьшить интервал между буквами на 0.5em (половина текущего размера шрифта) */
+}
+
+.body-text {
+    padding-top: 2%;
+    font-family: Arial;
+    font-size: 110%;
+    color: #5f8a97;
+    letter-spacing: 0.05em;
+    line-height: 140%;
+}
+
+.body-title, 
+.body-text {
+    white-space: pre-line; /* перенос строки */
+    padding-right: 10%;
+    padding-left: 25%;
+}
+
+.container-3 { 
+    display: flex;
+    justify-content: center;
+    padding-top: 4%;
+    padding-bottom: 3%;
+}
+
+.box-5 { 
+    width: 98%;
+    background: linear-gradient(100deg, #feffff, #f1fbfd, #f8faff); /* Градиентный фон с измененными цветами */
+    border-radius: 30px; /* Радиус закругления углов */
+}
+
+.container-3-1 { 
+    display: flex;
+    justify-content: space-between;
+}
+
+.b-title {
+    color: #353535;
+    padding-right: 10%;
+    margin: 0;
+    font-family: Arial;
+    font-size: 180%;
+    letter-spacing: -0.05em; /* уменьшить интервал между буквами на 0.5em (половина текущего размера шрифта) */
+}
+
+.b-text {
+    padding-top: 2%;
+    font-family: Arial;
+    font-size: 105%;
+    color: #5f8a97;
+    letter-spacing: 0.05em;
+    line-height: 140%;
+}
+
+.b-title, 
+.b-text {
+    white-space: pre-line; /* перенос строки */
+}
+
+.box-5-1 .b-title, 
+.box-5-1 .b-text,
+.box-5-1 img {
+    padding-left: 24%;
+}
+
+.box-5-1 img {
+    padding-top: 10%;
+    padding-bottom: 5%;
+    max-width: 10%; 
+    height: auto;
+}
+
+
+.box-5-1 .b-text {
+    padding-bottom: 15%;  
+}
+
+.box-5-1 {
+    width: 30%;
+}
+
+.box-5-2 .b-title, 
+.box-5-2 .b-text,
+.box-5-2 img {
+    padding-left: 15%;
+    
+}
+
+.box-5-2 img {
+    padding-top: 10%;
+    padding-bottom: 5%;
+    max-width: 11%; 
+    height: auto;
+}
+
+.box-5-2 .b-text {
+    padding-bottom: 15%;  
+}
+
+.box-5-2 {
+    width: 30%;
+}
+
+.box-5-3 .b-title, 
+.box-5-3 .b-text,
+.box-5-3 img {
+    padding-left: 1%;
+}
+
+.box-5-3 img {
+    padding-top: 10%;
+    padding-bottom: 5%;
+    max-width: 11%; 
+    height: auto;
+}
+
+.box-5-3 .b-text {
+    padding-bottom: 15%;  
+}
+
+.box-5-3 {
+    width: 30%;
+}
+
+.footer-title {
+    color: #353535;
+    padding-right: 10%;
+    margin: 0;
+    font-family: Corbel;
+    font-size: 380%;
+    letter-spacing: -0.05em; /* уменьшить интервал между буквами на 0.5em (половина текущего размера шрифта) */
+}
+
+.footer-text {
+    padding-top: 2%;
+    font-family: Arial;
+    font-size: 110%;
+    color: #5f8a97;
+    letter-spacing: 0.05em;
+    line-height: 140%;
+}
+
+.footer-title, 
+.footer-text {
+    white-space: pre-line; /* перенос строки */
+    padding-left: 16%;
+}
+
+.container-4 { 
+    display: flex;
+    justify-content: space-between;
+    padding-top: 4%;
+}
+
+.box-6 {
+
+    width: 50%;
+}
+
+.box-7 {
+    width: 26%; 
+    margin-right: 10%;
+    margin-top: 1%;
+    background: white; /* Градиентный фон с измененными цветами */
+    border-radius: 15px; /* Радиус закругления углов */
+    box-shadow: 30px 40px 60px -10px rgba(131, 140, 162, 0.5);
+
+    img {
+        max-width: 10%; 
+        height: auto;
+        vertical-align: text-bottom;
+        margin-right: 3%;
+    }
+}
+
+.b1-title {
+    font-size: 150%;
+    color: #353535;
+    margin: 0;
+    padding-top: 7%;
+    padding-bottom: 1%;
+    font-family: Arial;
+    letter-spacing: -0.05em; /* уменьшить интервал между буквами на 0.5em (половина текущего размера шрифта) */
+}
+
+.b1-text {
+    padding-bottom: 7%;
+    font-family: Arial;
+    font-size: 110%;
+    color: #5f8a97;
+    letter-spacing: 0.05em;
+    line-height: 140%;
+}
+
+.b1-title, 
+.b1-text {
+    white-space: pre-line; /* перенос строки */
+    padding-left: 10%;
+}
+
+.container-5 { 
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2%;
+}
+
+.box-8 {
+    width: 8%;
+    margin-left: 18%;
+
+    img {
+        padding-bottom: 5%;
+        max-width: 80%; 
+        height: auto;
+    }
+}
+
+.box-9 {
+    width: 23%; 
+    margin-left: 21%;
+    background: white; /* Градиентный фон с измененными цветами */
+    border-radius: 15px; /* Радиус закругления углов */
+    box-shadow: 30px 40px 60px -10px rgba(131, 140, 162, 0.5);
+
+    img {
+        max-width: 10%; 
+        height: auto;
+        vertical-align: text-bottom;
+        margin-right: 3%;
+    }
+}
+
+.box-10 {
+    width: 22%; 
+    margin-right: 5%;
+    background: white; /* Градиентный фон с измененными цветами */
+    border-radius: 15px; /* Радиус закругления углов */
+    box-shadow: 30px 40px 60px -10px rgba(131, 140, 162, 0.5);
+
+    img {
+        max-width: 10%; 
+        height: auto;
+        vertical-align: text-bottom;
+        margin-right: 3%;
+    }
+}
+
+.box-11 {
+    width: 22%; 
+    margin-left: 37.5%;
+    background: white; /* Градиентный фон с измененными цветами */
+    border-radius: 15px; /* Радиус закругления углов */
+    box-shadow: 30px 40px 60px -10px rgba(131, 140, 162, 0.5);
+
+    img {
+        max-width: 10%; 
+        height: auto;
+        vertical-align: text-bottom;
+        margin-right: 3%;
+    }
+}
+
+.box-12 {
+    width: 23%; 
+    margin-right: 16%;
+    background: white; /* Градиентный фон с измененными цветами */
+    border-radius: 15px; /* Радиус закругления углов */
+    box-shadow: 30px 40px 60px -10px rgba(131, 140, 162, 0.5);
+
+    img {
+        max-width: 10%; 
+        height: auto;
+        vertical-align: text-bottom;
+        margin-right: 3%;
+    }
+}
+
+.container-6 { 
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2%;
+    padding-bottom: 7%;
+}
+
+@media (max-width: 1900px) {
+
+    input[type="number"] {
+        width: 142px;
+    }
+    
+    .num-group111 {
+        width: 235px;
+    }
+
+    .box-3 {
+        width: 37.7%;
+    }
+
+    .body-text {
+        width: 60%;
+    }
+
+    .body-text {
+        white-space: normal; 
+    }
+    
+    .body-title, 
+    .body-text {
+        padding-right: 10%;
+        padding-left: 25%;
+    }
+    
+    .b-title, 
+    .b-text {
+        white-space: normal;
+    }
+
+    .b-text {
+        width: 75%;
+    }
+
+    .b1-title {
+        font-size: 150%;
+        color: #353535;
+        margin: 0;
+        padding-top: 7%;
+        padding-bottom: 1%;
+        font-family: Arial;
+        letter-spacing: -0.05em; /* уменьшить интервал между буквами на 0.5em (половина текущего размера шрифта) */
+    }
+    
+    .b1-text {
+        width: 80%;
+    }
+    
+    .b1-title, 
+    .b1-text {
+        white-space: normal;
+        padding-left: 10%;
+    }
+
+    .footer-text {
+        width: 70%;
+    }
+    
+    .footer-title, 
+    .footer-text {
+        white-space: normal;
+        padding-left: 16%;
+    }
+}
+
+@media (max-width: 1750px) {
+    
+    input[type="number"] {
+        width: 136px;
+    }
+    
+    .num-group111 {
+        width: 225px;
+    }
+
+    .box-3 {
+        width: 37.7%;
+        margin-left: 5%;
+    }
+
+    .box-4 {
+        img {
+            width: 9%;
+        }
+    }
+
+    .body-text {
+        font-size: 100%;
+        width: 60%;
+    }
+
+    .body-title {
+        font-size: 320%;
+    }
+}
+
+@media (max-width: 1700px) {
+
+    input[type="number"] {
+        width: 130px;
+    }
+    
+    .num-group111 {
+        width: 215px;
+
+        p {
+            left: 79%;
+        }
+    }
+}
+
+@media (max-width: 1600px) {
+
+    .header-title {
+        width: 70%;
+        font-size: 400%;
+    }
+    
+    .header-text {
+        width: 70%;
+        font-size: 110%;
+        white-space: normal;
+    }
+
+    input[type="number"] {
+        width: 123px;
+    }
+    
+    .num-group111 {
+        width: 205px;
+    
+        p {
+            left: 77%;
+        }
+    }
+
+    .result-text {
+        width: 85%;
+    }
+
+    .body-text {
+        width: 60%;
+    }
+
+    .body-title {
+        font-size: 310%;
+    }
+}
+
+@media (max-width: 1500px) {
+
+    input[type="number"] {
+        width: 111px;
+    }
+    
+    .num-group111 {
+        width: 185px;
+    
+        p {
+            left: 75%;
+        }
+    }
+
+    .body-text {
+        font-size: 80%;
+        width: 60%;
+    }
+
+    .body-title {
+        font-size: 270%;
+    }
+
+    .body-title, 
+    .body-text {
+        margin-left: -10%;
+    }
+}
+
+@media (max-width: 1400px) {
+
+    .box-2 {
+        width: 430px;
+    }
+
+    input[type="number"] {
+        width: 105px;
+    }
+    
+    .num-group111 {
+        width: 175px;
+    }
+
+    .box-3 {
+        width: 430px;
+    }
+
+    .body-text {
+        font-size: 70%;
+        width: 60%;
+    }
+
+    .body-title {
+        font-size: 250%;
+    }
+}
+
+@media (max-width: 1300px) {
+
+    .box-1 {
+
+        img {
+            max-width: 10%; 
+            height: auto;
+        }
+    }
+
+    .box-3 {
+        width: 400px;
+    }
+
+    .body-text {
+        font-size: 70%;
+        width: 60%;
+    }
+
+}
+
+@media (max-width: 1200px) {
+
+    input[type="radio"] {
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+
+    input[type="number"] {
+        width: 96px;
+    }
+    
+    .num-group111 {
+        width: 160px;
+
+        p {
+            left: 70%;
+        }
+    }
+
+    .box-3 {
+        width: 390px;
+    }
+
+    .body-text {
+        font-size: 70%;
+        width: 75%;
+    }
+
+    .body-title {
+        width: 75%;
+    }
+}
+
+@media (max-width: 1000px) {
+
+    input[type="number"] {
+        width: 90px;
+    }
+    
+    .num-group111 {
+        width: 150px;
+
+        p {
+            left: 70%;
+        }
+    }
+
+    .box-1 {
+
+        img {
+            max-width: 12%; 
+            height: auto;
+        }
+    }
+
+    .header-title {
+        width: 70%;
+        font-size: 350%;
+    }
+
+    .header-text {
+        width: 67%;
+        font-size: 105%;
+        white-space: normal;
+    }
+
+    .box-3 {
+        width: 350px;
+    }
+
+    .body-text {
+        font-size: 70%;
+        width: 75%;
+    }
+
+    .body-title {
+        font-size: 200%;
+        width: 75%;
+    }
+}
+
+@media (max-width: 950px) {
+
+    input[type="number"] {
+        width: 75px;
+    }
+    
+    .num-group111 {
+        width: 139px;
+
+        p {
+            left: 70%;
+        }
+    }
+
+    .header-title {
+        width: 70%;
+        font-size: 300%;
+    }
+
+    .header-text {
+        font-size: 100%;
+    }
+
+    .box-3 {
+        margin-left: -3%;
+    }
+}
+
+@media (max-width: 768px) {
+    .container-1 { 
+        flex-direction: column; /* Измените на необходимую ориентацию */
+        justify-content: center; /* Измените на необходимое выравнивание */
+        align-items: center;
+        position: relative;
+    }
+    
+    .container-1::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: linear-gradient(100deg, #fcfeff, #f1fbfd, #cbdffb);
+        border-radius: 30px; /* Радиус закругления углов для фона */
+        z-index: -1;
+        width: 100%; /* Ширина фонового слоя */
+        height: 100%;
+    }
+
+    .header-title {
+        color: #353535;
+        margin: 0;
+        margin-left: 3%;
+        font-size: 350%;
+        text-align: center;
+        line-height: 100%;
+        font-family: Corbel;
+        letter-spacing: -0.05em; /* уменьшить интервал между буквами на 0.5em (половина текущего размера шрифта) */
+    }
+    
+    .header-text {
+        padding-top: 3%;
+        font-size: 100%;
+        color: #7c7c7c;
+        font-family: Arial;
+        text-align: center;
+        letter-spacing: 0.01em;
+        line-height: 150%;
+        white-space: normal;
+        width: 100%;
+        padding-left: 1%;   
+        width: 95%;
+    }
+    
+    .header-title, 
+    .header-text { 
+        padding-right: 10%;
+    }
+    
+    .box-1 {
+        width: 100%; 
+        height: 700px; 
+    
+        img {
+            padding-left: 45%;
+            padding-top: 5%;
+            max-width: 6%; 
+            height: auto;
+            vertical-align: text-bottom;
+            margin-right: 3%;
+            margin-bottom: -4%;
+        }
+    }
+
+    input[type="radio"] {
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+
+    .box-2 {
+        position: absolute;
+        width: 90%; 
+        height: 72%;
+        margin-left: 12%;
+        background: white; /* Градиентный фон с измененными цветами */
+        border-radius: 15px; /* Радиус закругления углов */
+        box-shadow: 2px 5px 60px rgba(137, 137, 137, 0.5);
+        top: 50%;
+    }
+
+    .num-group111 {
+        display: flex;
+        justify-content: start;
+        position: relative;
+        width: 250px;
+        height: 70px;
+        margin-top: 5%;
+        border: 1px solid #e6e6e6; /* Устанавливаем границу */
+        border-radius: 15px; /* Делаем форму круглой */
+        outline: none; /* Убираем контур при фокусе */
+    
+        p {
+            position: absolute;
+            left: 80%;
+            font-size: x-large;
+            font-weight: bold;
+            color: #2050ff;
+        }
+    }
+    
+    .result {
+        width: 90%;
+        background: linear-gradient(100deg, #0561fe, #5490ff);
+        border-top-left-radius: 10px; /* Радиус скругления для верхнего левого угла */
+        border-bottom-left-radius: 10px; /* Радиус скругления для нижнего левого угла */
+        border-top-right-radius: 65px; /* Радиус скругления для верхнего правого угла */
+        border-bottom-right-radius: 65px; /* Радиус скругления для нижнего правого угла */
+    }
+    
+    .result-title {
+        color: white;
+        font-family: Calibri Light;
+        font-size: 160%;
+        padding-top: 5%;
+    }
+    
+    .result-text {
+        margin-top: -2%;
+        color: rgb(218, 217, 217);
+        font-family: Calibri;
+        font-size: 100%;
+    }
+    
+    .result-title, .result-text {
+        padding-left: 6%;
+    }
+
+    .container-2 { 
+        padding-top: 40%;
+        padding-bottom: 5%;
+        flex-direction: row; /* Измените на необходимую ориентацию */
+        justify-content: center; /* Измените на необходимое выравнивание */
+        align-items: center;
+    }
+    
+    .box-3 {
+
+        width: 100%;
+        overflow: hidden; /* Обрезать все, что не помещается в контейнере */
+        
+        img {
+            width: 150%;
+            height: auto;
+            margin-left: -35%;
+            padding: 0;
+        }
+    }
+    
+    .box-4 {
+
+        width: 120%;
+    
+        img {
+            display: none;
+        }
+    }
+    
+    .body-title {
+        color: #353535;
+        padding-right: 2%;
+        padding-left: 17%;
+        margin: 0;
+        font-family: Corbel;
+        font-size: 220%;
+        white-space: pre-line;
+        line-height: 95%;
+        letter-spacing: -0.05em; /* уменьшить интервал между буквами на 0.5em (половина текущего размера шрифта) */
+    }
+    
+    .body-text {
+        padding-top: 2%;
+        padding-right: 2%;
+        padding-left: 27%;
+        font-family: Arial;
+        font-size: 95%;
+        color: #216989;
+        letter-spacing: 0.05em;
+        line-height: 140%;
+        white-space: normal;
+    }
+    
+    .box-5 { 
+        width: 98%;
+        background: linear-gradient(100deg, #feffff, #f1fbfd, #f8faff); /* Градиентный фон с измененными цветами */
+        border-radius: 30px; /* Радиус закругления углов */
+    }
+    
+    .container-3-1 { 
+        flex-direction: column; /* Измените на необходимую ориентацию */
+        justify-content: start; /* Измените на необходимое выравнивание */
+        align-items: flex-start;
+        position: relative;
+    }
+    
+    .b-title {
+        color: #353535;
+        padding-right: 10%;
+        padding-top: 10%;
+        margin: 0;
+        font-family: Arial;
+        font-size: 180%;
+        letter-spacing: -0.05em; /* уменьшить интервал между буквами на 0.5em (половина текущего размера шрифта) */
+    }
+    
+    .b-text {
+        padding-top: 2%;
+        padding-bottom: 0;
+        margin-bottom: 0;
+        font-family: Arial;
+        font-size: 105%;
+        color: #5f8a97;
+        letter-spacing: 0.05em;
+        line-height: 140%;
+        width: 75%;
+        padding-left: 20%;    
+    }
+    
+    .b-title, 
+    .b-text {
+        white-space: normal;
+    }
+    
+    .box-5-1 .b-title, 
+    .box-5-1 .b-text {
+        padding-left: 20%;    
+    }
+    
+    .box-5-1 img {
+        position: absolute;
+        top: 15%;
+        left: 4%;
+        padding: 0;
+        max-width: 10%; 
+        height: auto;
+    }
+    
+    .box-5-1 .b-text {
+        padding-bottom: 0;  
+    }
+    
+    .box-5-1 {
+        width: 100%;
+    }
+    
+    .box-5-2 .b-title, 
+    .box-5-2 .b-text {
+        padding-left: 20%;
+    }
+    
+    .box-5-2 img {
+        position: absolute;
+        top: 45%;
+        left: 4%;
+        padding: 0;
+        max-width: 10%; 
+        height: auto;
+    }
+    
+    .box-5-2 .b-text {
+        padding-bottom: 0;  
+    }
+    
+    .box-5-2 {
+        width: 100%;
+    }
+    
+    .box-5-3 .b-title, 
+    .box-5-3 .b-text {
+        padding-left: 20%;
+    }
+    
+    .box-5-3 img {
+        position: absolute;
+        top: 75%;
+        left: 4%;
+        padding: 0;
+        max-width: 10%; 
+        height: auto;
+    }
+    
+    .box-5-3 .b-text {
+        padding-bottom: 8%;  
+    }
+    
+    .box-5-3 {
+        width: 100%;
+    }
+
+    .footer-title {
+        color: #353535;
+        margin: 0;
+        font-family: Corbel;
+        font-size: 250%;
+        padding-left: 12%;
+        letter-spacing: -0.05em; /* уменьшить интервал между буквами на 0.5em (половина текущего размера шрифта) */
+    }
+    
+    .footer-text {
+        font-family: Arial;
+        font-size: 100%;
+        color: #5f8a97;
+        letter-spacing: 0.05em;
+        line-height: 140%;
+        padding-left: 5%;
+        padding-bottom: 5%;
+        width: 90%;
+        text-align: center;
+    }
+    
+    .footer-title, 
+    .footer-text {
+        white-space: normal;
+        text-align: center;
+    }
+    
+    .container-4 { 
+        position: relative;
+        padding-top: 10%;
+        flex-direction: column; /* Измените на необходимую ориентацию */
+        justify-content: center; /* Измените на необходимое выравнивание */
+        align-items: center;
+    }
+    
+    .box-6 {
+        width: 100%;
+    }
+    
+    .box-7 {
+        position: absolute;
+        width: 46%; 
+        height: 230px;
+        top: 104%;
+        right: 42%;
+        background: white; /* Градиентный фон с измененными цветами */
+        border-radius: 15px; /* Радиус закругления углов */
+        box-shadow: 30px 40px 60px -10px rgba(131, 140, 162, 0.5);
+    
+        img {
+            max-width: 10%; 
+            height: auto;
+            vertical-align: text-bottom;
+            margin-right: 3%;
+        }
+    }
+    
+    .b1-title {
+        font-size: 140%;
+        color: #353535;
+        margin: 0;
+        padding-top: 10%;
+        padding-bottom: 1%;
+        font-family: Arial;
+        letter-spacing: -0.05em; /* уменьшить интервал между буквами на 0.5em (половина текущего размера шрифта) */
+    }
+    
+    .b1-text {
+        width: 80%;
+        font-family: Arial;
+        font-size: 100%;
+        color: #5f8a97;
+        letter-spacing: 0.05em;
+        line-height: 140%;
+    }
+    
+    .b1-title, 
+    .b1-text {
+        white-space: normal; /* перенос строки */
+        padding-left: 10%;
+    }
+    
+    .container-5 { 
+        display: flex;
+        justify-content: space-between;
+        padding-top: 2%;
+    }
+    
+    .box-8 {
+        width: 8%;
+        margin-left: 18%;
+    
+        img {
+            display: none;
+        }
+    }
+    
+    .box-9 {
+        position: absolute;
+        width: 46%; 
+        height: 233px;
+        left: 29%;
+        margin-left: 21%;
+        background: white; /* Градиентный фон с измененными цветами */
+        border-radius: 15px; /* Радиус закругления углов */
+        box-shadow: 30px 40px 60px -10px rgba(131, 140, 162, 0.5);
+    
+        img {
+            max-width: 10%; 
+            height: auto;
+            vertical-align: text-bottom;
+            margin-right: 3%;
+        }
+    }
+    
+    .box-10 {
+        position: absolute;
+        width: 45%; 
+        height: 240px;
+        right: 47%;
+        margin-top: 34%;
+        background: white; /* Градиентный фон с измененными цветами */
+        border-radius: 15px; /* Радиус закругления углов */
+        box-shadow: 30px 40px 60px -10px rgba(131, 140, 162, 0.5);
+    
+        img {
+            max-width: 10%; 
+            height: auto;
+            vertical-align: text-bottom;
+            margin-right: 3%;
+        }
+    }
+    
+    .box-11 {
+        position: absolute;
+        width: 46%; 
+        height: 241px;
+        left: 12.5%;
+        margin-top: 32%;
+        background: white; /* Градиентный фон с измененными цветами */
+        border-radius: 15px; /* Радиус закругления углов */
+        box-shadow: 30px 40px 60px -10px rgba(131, 140, 162, 0.5);
+    
+        img {
+            max-width: 10%; 
+            height: auto;
+            vertical-align: text-bottom;
+            margin-right: 3%;
+        }
+    }
+    
+    .box-12 {
+        position: absolute;
+        width: 50%; 
+        height: 241px;
+        left: 25%;
+        margin-top: 67%;
+        background: white; /* Градиентный фон с измененными цветами */
+        border-radius: 15px; /* Радиус закругления углов */
+        box-shadow: 30px 40px 60px -10px rgba(131, 140, 162, 0.5);
+    
+        img {
+            max-width: 10%; 
+            height: auto;
+            vertical-align: text-bottom;
+            margin-right: 3%;
+        }
+    }
+    
+    .container-6 { 
+        display: flex;
+        justify-content: space-between;
+        padding-top: 2%;
+        padding-bottom: 7%;
+    }
+
+    .spacer {
+        position: absolute;
+        margin-top: 800px;
+        width: 100px; 
+        height: 20px;
+    }
+
+}
+
+@media (max-width: 760px) {
+
+    input[type="number"] {
+        width: 148px;
+    }
+    
+    .num-group111 {
+        width: 245px;
+    }
+
+    .box-10 {
+        margin-top: 250px;
+    }
+
+    .box-11 {
+        margin-top: 235px;
+    }
+
+    .box-12 {
+        margin-top: 500px;
+    }
+}
+
+
+@media (max-width: 740px) {
+
+    input[type="number"] {
+        width: 145px;
+    }
+    
+    .num-group111 {
+        width: 240px;
+    }
+
+    .body-title {
+        font-size: 200%;
+    }
+
+    .body-text {
+        font-size: 92%;
+    }
+}
+
+@media (max-width: 716px) {
+
+    input[type="number"] {
+        width: 139px;
+    }
+    
+    .num-group111 {
+        width: 230px;
+    }
+
+    .body-title {
+        font-size: 190%;
+    }
+
+    .body-text {
+        font-size: 85%;
+    }
+
+    .b1-text {
+        font-size: 95%;
+    }
+
+    .box-7 {
+        height: 230px;
+    }
+
+    .box-9 {
+        height: 234px;
+    }
+
+    .box-10 {
+        margin-top: 250px;
+    }
+
+    .box-11 {
+        margin-top: 235px;
+    }
+
+    .box-12 {
+        margin-top: 500px;
+    }
+}
+
+@media (max-width: 680px) {
+
+    input[type="number"] {
+        width: 133px;
+    }
+    
+    .num-group111 {
+        width: 220px;
+    }
+}
+
+@media (max-width: 650px) {
+
+    input[type="number"] {
+        width: 127px;
+    }
+    
+    .num-group111 {
+        width: 210px;
+    }
+
+    .body-title {
+        font-size: 170%;
+    }
+
+    .body-text {
+        font-size: 80%;
+    }
+
+}
+
+@media (max-width: 620px) {
+
+    input[type="number"] {
+        width: 120px;
+    }
+    
+    .num-group111 {
+        width: 200px;
+    }
+}
+
+@media (max-width: 610px) {
+
+    input[type="number"] {
+        width: 120px;
+    }
+    
+    .num-group111 {
+        width: 190px;
+    }
+}
+
+
+@media (max-width: 576px) {
+
+    .box-1 {
+    
+        img {
+            padding-left: 43%;
+            padding-top: 7%;
+            max-width: 10%; 
+            height: auto;
+            vertical-align: text-bottom;
+            margin-right: 3%;
+        }
+    }
+
+    .header-title {
+        margin-left: 3%;
+    }
+
+    .header-text {
+        width: 90%;
+        font-size: 125%;
+        margin-left: 1%;
+    }
+
+    .calc-title {
+        padding-top: 8%;
+        padding-left: 6%;
+        font-size: 180%;
+    }
+
+    
+    input[type="radio"] {
+        margin-left: 7px;
+        margin-right: 12px;
+    }
+    
+    .radio {
+        padding-bottom: 8%;
+        padding-right: 30%;
+        font-size: 125%;
+    }
+    
+    .custom-input {
+        margin-left: -3%;
+    }
+
+    input[type="number"] {
+        width: 241px;
+    }
+    
+    .num-group111 {
+        width: 400px;
+
+        p {
+            position: absolute;
+            left: 85%;
+            font-size: x-large;
+            font-weight: bold;
+            color: #2050ff;
+        }
+    }
+
+    .radio-group {
+        margin-bottom: -10%;
+    }
+
+    .num-group {
+        padding-top: 5%;
+    }
+
+    .num {
+        display: block;
+    }
+
+    .box-2 {
+        margin-top: 40%;
+        height: 85%;
+    }
+
+
+    .header-title {
+        font-size: 400%;
+    }
+
+    .result {
+        padding-left: 2%;
+        height: 152px;
+        border-top-left-radius: 15px; /* Радиус скругления для верхнего левого угла */
+        border-bottom-left-radius: 15px; /* Радиус скругления для нижнего левого угла */
+        border-top-right-radius: 15px; /* Радиус скругления для верхнего правого угла */
+        border-bottom-right-radius: 15px; /* Радиус скругления для нижнего правого угла */
+        background: linear-gradient(100deg, #0561fe, #5490ff);
+    }
+
+    .container-2 { 
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-top: 100%;
+        padding-bottom: 7%;
+    }
+
+    .box-3 {
+        
+        img {
+            width: 123%;
+            height: auto;
+            margin-left: -10%;
+        }
+    }
+
+    .body-title {
+        color: #353535;
+        padding-right: 2%;
+        padding-left: 13%;
+        padding-top: 3%;
+        margin: 0;
+        font-family: Corbel;
+        font-size: 310%;
+        white-space: pre-line;
+        line-height: 95%;
+        letter-spacing: -0.05em; /* уменьшить интервал между буквами на 0.5em (половина текущего размера шрифта) */
+    }
+    
+    .body-text {
+        width: 72%;
+        padding-top: 5%;
+        padding-right: 2%;
+        padding-left: 23%;
+        font-family: Arial;
+        font-size: 130%;
+        color: #216989;
+        letter-spacing: 0.05em;
+        line-height: 140%;
+        white-space: normal;
+    }
+
+    .container-3-1 { 
+        flex-direction: column; /* Измените на необходимую ориентацию */
+        justify-content: start; /* Измените на необходимое выравнивание */
+        align-items: flex-start;
+        position: static;
+    }
+    
+    .b-title {
+        color: #353535;
+        padding-right: 10%;
+        padding-top: 6%;
+        margin: 0;
+        font-family: Arial;
+        font-size: 200%;
+        letter-spacing: -0.05em; /* уменьшить интервал между буквами на 0.5em (половина текущего размера шрифта) */
+    }
+    
+    .b-text {
+        padding-top: 2%;
+        padding-bottom: 0;
+        margin-bottom: 0;
+        font-family: Arial;
+        font-size: 132%;
+        color: #5f8a97;
+        letter-spacing: 0.05em;
+        line-height: 140%;
+        width: 85%;
+        padding-left: 20%;    
+    }
+    
+    .b-title, 
+    .b-text {
+        white-space: normal;
+    }
+    
+    .box-5-1 .b-title, 
+    .box-5-1 .b-text {
+        padding-left: 4%;    
+    }
+    
+    .box-5-1 img {
+        position: static;
+        margin-left: 4%;
+        margin-top: 10%;
+        padding-top: 5%;
+        max-width: 15%; 
+        height: auto;
+    }
+    
+    .box-5-1 .b-text {
+        padding-bottom: 0;  
+    }
+    
+    .box-5-1 {
+        width: 100%;
+    }
+    
+    .box-5-2 .b-title, 
+    .box-5-2 .b-text {
+        padding-left: 4%;
+    }
+    
+    .box-5-2 img {
+        position: static;
+        padding: 0;
+        margin-left: 4%;
+        margin-top: 10%;
+        max-width: 15%; 
+        height: auto;
+    }
+    
+    .box-5-2 .b-text {
+        padding-bottom: 0;  
+    }
+    
+    .box-5-2 {
+        width: 100%;
+    }
+    
+    .box-5-3 .b-title, 
+    .box-5-3 .b-text {
+        padding-left: 4%;
+    }
+    
+    .box-5-3 img {
+        position: static;
+        padding: 0;
+        margin-left: 4%;
+        margin-top: 10%;
+        max-width: 15%; 
+        height: auto;
+    }
+    
+    .box-5-3 .b-text {
+        padding-bottom: 15%;  
+    }
+    
+    .box-5-3 {
+        width: 100%;
+    }
+
+    .footer-title {
+        color: #353535;
+        margin: 0;
+        font-family: Corbel;
+        font-size: 320%;
+        padding-left: 11%;
+        letter-spacing: -0.05em; /* уменьшить интервал между буквами на 0.5em (половина текущего размера шрифта) */
+    }
+    
+    .footer-text {
+        font-family: Arial;
+        font-size: 125%;
+        color: #5f8a97;
+        letter-spacing: 0.05em;
+        line-height: 140%;
+        padding-left: 5%;
+        padding-bottom: 5%;
+        width: 89%;
+        text-align: center;
+    }
+    
+    .footer-title, 
+    .footer-text {
+        white-space: normal;
+        text-align: center;
+    }
+
+    .box-7 {
+        position: absolute;
+        width: 92%; 
+        height: 300px;
+        top: 104%;
+        left: 3%;
+        right: 0;
+        background: white; /* Градиентный фон с измененными цветами */
+        border-radius: 15px; /* Радиус закругления углов */
+        box-shadow: 30px 40px 60px -10px rgba(131, 140, 162, 0.5);
+    
+        img {
+            max-width: 9%;
+            height: auto;
+            vertical-align: text-bottom;
+            margin-right: 3%;
+        }
+    }
+    
+    .b1-title {
+        font-size: 170%;
+        color: #353535;
+        margin: 0;
+        padding-top: 10%;
+        padding-bottom: 1%;
+        font-family: Arial;
+        letter-spacing: -0.05em; /* уменьшить интервал между буквами на 0.5em (половина текущего размера шрифта) */
+    }
+    
+    .b1-text {
+        width: 75%;
+        font-family: Arial;
+        font-size: 130%;
+        color: #5f8a97;
+        letter-spacing: 0.05em;
+        line-height: 140%;
+    }
+    
+    .b1-title, 
+    .b1-text {
+        white-space: normal; /* перенос строки */
+        padding-left: 10%;
+    }
+    
+    .container-5 { 
+        display: flex;
+        justify-content: space-between;
+        padding-top: 2%;
+    }
+    
+    .box-9 {
+        position: absolute;
+        width: 89%; 
+        height: 260px;
+        margin-top: 59%;
+        left: 4.5%;
+        right: 0;
+        margin-left: 0;
+        background: white; /* Градиентный фон с измененными цветами */
+        border-radius: 15px; /* Радиус закругления углов */
+        box-shadow: 30px 40px 60px -10px rgba(131, 140, 162, 0.5);
+    
+        img {
+            max-width: 9%; 
+            height: auto;
+            vertical-align: text-bottom;
+            margin-right: 3%;
+        }
+    }
+    
+    .box-10 {
+        position: absolute;
+        width: 89%;
+        height: 280px;
+        right: 0;
+        left: 4.5%;
+        margin-top: 109%;
+        background: white; /* Градиентный фон с измененными цветами */
+        border-radius: 15px; /* Радиус закругления углов */
+        box-shadow: 30px 40px 60px -10px rgba(131, 140, 162, 0.5);
+    
+        img {
+            max-width: 10%; 
+            height: auto;
+            vertical-align: text-bottom;
+            margin-right: 3%;
+        }
+    }
+    
+    .box-11 {
+        position: absolute;
+        width: 89%;
+        height: 340px;
+        right: 0;
+        left: 4.5%;
+        margin-left: 0;
+        margin-top: 161%;
+        background: white; /* Градиентный фон с измененными цветами */
+        border-radius: 15px; /* Радиус закругления углов */
+        box-shadow: 30px 40px 60px -10px rgba(131, 140, 162, 0.5);
+    
+        img {
+            max-width: 10%; 
+            height: auto;
+            vertical-align: text-bottom;
+            margin-right: 3%;
+        }
+    }
+    
+    .box-12 {
+        position: absolute;
+        width: 89%;
+        height: 335px;
+        right: 0;
+        left: 4.5%;
+        margin-left: 0;
+        margin-top: 226%;
+        background: white; /* Градиентный фон с измененными цветами */
+        border-radius: 15px; /* Радиус закругления углов */
+        box-shadow: 30px 40px 60px -10px rgba(131, 140, 162, 0.5);
+    
+        img {
+            max-width: 10%; 
+            height: auto;
+            vertical-align: text-bottom;
+            margin-right: 3%;
+        }
+    }
+
+    .spacer {
+        position: absolute;
+        margin-top: 210%;
+        width: 100%; 
+        height: 500px;
+    }
+
+}
+
+@media (max-width: 560px) { 
+
+    input[type="number"] {
+        width: 229px;
+    }
+    
+    .num-group111 {
+        width: 380px;
+    }
+
+    .box-7 {
+        height: 300px;
+        margin-top: 0;
+        left: 3%;
+    }
+
+    .box-9 {
+        height: 300px;
+        margin-top: 320px;
+        left: 4.5%;
+    }
+    
+    .box-10 {
+        height: 300px;
+        margin-top: 635px;
+        left: 4.5%;
+    }
+    
+    .box-11 {
+        height: 350px;
+        margin-top: 940px;
+        left: 4.5%;
+    }
+    
+    .box-12 {
+        height: 350px;
+        margin-top: 1305px;
+        left: 4.5%;
+    }
+
+    .spacer {
+        position: absolute;
+        margin-top: 1300px;
+        width: 100%; 
+        height: 500px;
+    }
+
+}
+
+@media (max-width: 550px) {
+
+    input[type="number"] {
+        width: 223px;
+    }
+    
+    .num-group111 {
+        width: 370px;
+    }
+}
+
+@media (max-width: 540px) {
+
+    input[type="number"] {
+        width: 217px;
+    }
+    
+    .num-group111 {
+        width: 360px;
+    }
+
+}
+
+
+
+
+
+
